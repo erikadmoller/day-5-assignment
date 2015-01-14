@@ -1,12 +1,12 @@
+@charset "UTF-8";
 header {
   width: 100%;
   height: 11.5em;
-  background-color: blue;
-  font-family: sans-serif; }
+  background-color: blue; }
 
 .menu {
   color: black;
-  font-family: sans-serif;
+  font-family: oswald, sans-serif;
   text-align: center; }
 
 .menu li {
@@ -23,12 +23,16 @@ header {
 
 .menu h2 {
   font-size: 1em;
-  padding: 0.4em 0 0 0; }
+  padding: 0.4em 0 0 0;
+  font-family: asap, sans-serif; }
+
+.wrapper {
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 4em; }
 
 .content {
   padding: 0 2em 0 2em;
-  font-family: sans-serif;
-  border-bottom: 1px solid black; }
+  font-family: sans-serif; }
 
 .content h1 {
   text-transform: uppercase;
@@ -45,20 +49,79 @@ header {
   padding-top: 2em;
   line-height: 1.5em; }
 
+.indented-box {
+  margin-top: 1.5em;
+  padding: 0.6em 0;
+  height: 3em;
+  border-left: 4px solid #ddd; }
+
 .pullquote {
   text-transform: uppercase;
-  font-size: 1.25em; }
+  font-size: 1.25em;
+  padding: 0.7em 0 0.5em 1em; }
 
 .content a {
   color: blue;
   text-decoration: underline; }
 
-.box li {
-  width: 3em;
-  height: 2.25em;
+.left-box {
+  margin: 0.5em 0.7em 0 0;
+  float: left; }
+
+.comment-icon {
+  width: 2em;
+  height: 2em;
   background-color: blue;
+  display: inline-block; }
+
+.read-comments {
+  width: 8em;
+  background-color: green;
   display: inline-block;
-  margin: 0.5em 0.3em 0 0; }
+  vertical-align: top;
+  text-align: center;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  display: none; }
+
+.middle-box {
+  margin: 0.5em 0.7em 0 0;
+  float: left; }
+
+.later-icon {
+  width: 2em;
+  height: 2em;
+  background-color: red;
+  display: inline-block; }
+
+.read-later {
+  width: 5em;
+  background-color: green;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  display: none; }
+
+.right-box {
+  margin: 0.5em 0.7em 0 0; }
+
+.share-icon {
+  width: 2em;
+  height: 2em;
+  background-color: black;
+  display: inline-block; }
+
+.share-this-post {
+  width: 8em;
+  background-color: green;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  display: none; }
+
+.right-column {
+  padding: 0 2em 0 2em; }
 
 .dolphine {
   width: 7em;
@@ -70,19 +133,17 @@ header {
 
 .dolphine-text {
   text-align: center;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  padding-top: 1em; }
 
 .dolphine-text h1 {
   text-transform: uppercase;
   font-size: 1.25em; }
 
 .dolphine-text li {
-  font-family: sans-serif;
   font-size: 1.15em;
-  padding-right: 1em;
   display: inline-block;
-  word-spacing: 1em;
-  padding-bottom: 3em; }
+  padding: 0.5em 0.6em 3em 0; }
 
 .photo-ad {
   width: 100%;
@@ -95,6 +156,12 @@ header {
   font-size: 1.15em;
   padding: 1em 0 3em 0; }
 
+#sidebar {
+  display: none; }
+
+#sidebar-paragraph {
+  display: none; }
+
 .content2 {
   padding: 0 2em 0 2em;
   font-family: sans-serif; }
@@ -102,58 +169,50 @@ header {
 .content2 h1 {
   text-transform: uppercase;
   font-size: 1.75em;
-  padding: 2.5em 0 1em 0;
+  padding: 0 0 1em 0;
   line-height: 1em; }
 
-.post1 {
+.post {
   width: 100%;
-  height: 9em;
-  background-color: red;
   color: white;
   font-size: 1.75em;
-  margin-bottom: 0.75em; }
-
-.post1 li {
-  padding: 7.5em 0 0 0.8em;
+  margin-bottom: 0.75em;
+  padding: 7.5em 0 0.6em 0;
   text-transform: uppercase; }
 
-.post2 {
-  width: 100%;
-  height: 9em;
-  background-color: green;
-  color: white;
-  font-size: 1.75em;
-  margin-bottom: 0.75em; }
+.post p {
+  margin-left: .8em; }
 
-.post2 li {
-  padding: 6.5em 0 0 0.8em;
-  text-transform: uppercase; }
+#first-post {
+  background-color: red; }
 
-.post3 {
-  width: 100%;
-  height: 9em;
-  background-color: blue;
-  color: white;
-  font-size: 1.75em;
-  margin-bottom: 0.75em; }
+#hidden-post {
+  background-color: black;
+  display: none; }
 
-.post3 li {
-  padding: 7.5em 0 0 0.8em;
-  text-transform: uppercase; }
+#second-post {
+  background-color: green; }
+
+#third-post {
+  background-color: blue; }
 
 footer {
   width: 100%;
-  height: 18em;
   background-color: black;
   margin-top: 6em;
   text-align: center;
-  padding-top: 3em; }
+  padding: 3em 0 1.5em 0; }
 
-.footer-text li {
-  padding: 0.2em 0.6em;
+.footer-text {
+  width: 20em;
   font-family: sans-serif;
   font-size: 1.15em;
   color: white;
+  text-align: center;
+  line-height: 1.5em;
+  margin: 0 auto; }
+
+.footer-text li {
   display: inline-block; }
 
 .tiy-logo {
@@ -163,10 +222,94 @@ footer {
   margin: 1em auto;
   margin-top: 3em; }
 
-.footer-text h1 {
-  text-align: center;
-  color: white;
-  font-family: sans-serif;
-  line-height: 1.5em; }
+.company {
+  padding: 0 3em; }
+
+/* CSS for medium devices ≥1024px */
+@media (min-width: 1024px) {
+  .two-columns {
+    margin: 0 auto;
+    max-width: 63em; }
+
+  .content {
+    max-width: 35em;
+    display: inline-block; }
+
+  .right-column {
+    max-width: 20em;
+    display: inline-block;
+    vertical-align: top; }
+
+  #sidebar {
+    display: block;
+    font-size: 1em;
+    padding-bottom: 0.2em;
+    text-align: left; }
+
+  #sidebar-paragraph {
+    display: block;
+    text-align: left;
+    line-height: 1.5em; }
+
+  .read-comments {
+    display: inline-block; }
+
+  .read-later {
+    display: inline-block; }
+
+  .share-this-post {
+    display: inline-block;
+    margin-bottom: 5em; }
+
+  .content2 h1 {
+    text-align: center;
+    font-size: 4em; }
+
+  .content2 {
+    padding: 0 0; }
+
+  #hidden-post {
+    background-color: black;
+    display: inline-block; }
+
+  .post {
+    max-width: 25%;
+    display: inline-block; }
+
+  #second-post {
+    padding-top: 4.5em; }
+
+  footer {
+    padding: 0; }
+
+  .footer-text {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 1em 10em; }
+
+  .nav {
+    float: right; }
+
+  .pic-copyright {
+    float: left;
+    text-align: left;
+    margin: 0; }
+
+  .tiy-logo {
+    margin: 0 0;
+    display: inline-block; }
+
+  .pic-copyright h1 {
+    display: inline-block;
+    float: left; } }
+/* CSS for medium devices ≥1076px */
+@media (min-width: 1076px) {
+  #second-post {
+    padding-top: 5.5em; } }
+/* CSS for medium devices ≥1235px */
+@media (min-width: 1235px) {
+  #second-post {
+    padding-top: 6.5em; } }
 
 /*# sourceMappingURL=style.css.map */
