@@ -19,6 +19,14 @@ header {
 	color: #002D40;
 }
 
+.blog li {
+	display: none;
+}
+
+.wave {
+	display: none;
+}
+
 .menu h1{
 	font-size: 2em;
 	color: white;
@@ -243,7 +251,7 @@ footer {
 	background-color: black;
 	margin-top: 6em;
 	text-align: center;
-	padding: 3em 0 1.5em 0;
+	padding-bottom: 1em;
 }
 
 .footer-text {
@@ -254,10 +262,19 @@ footer {
 	text-align: center;
 	line-height: 1.5em;
 	margin: 0 auto;
+	padding-top: 3em;
 }
 
 .footer-text li {
 	display: inline-block;
+}
+
+.nav li {
+	padding: 0 0.2em;
+}
+
+.nav h1 {
+	display: none;
 }
 
 .tiy-logo {
@@ -275,6 +292,40 @@ footer {
 /* CSS for medium devices ≥1024px */
 
 @media (min-width: 1024px) {
+
+header {
+	height: 33em;
+}
+
+.menu {
+	padding: 0.7em 5em 0 5em;
+}
+
+.about-search {
+	float: right;
+}
+
+.blog {
+	float: left;
+}
+
+.blog li {
+	display: inline-block;
+	text-decoration: uppercase;
+	vertical-align: top;
+}
+
+.wave {
+	display: inline-block;
+	width: 2.5em;
+	height: 2.5em;
+	background-color: black;
+}
+
+.menu h1 {
+	font-size: 7em;
+
+}
 
 .two-columns {
 	margin: 0 auto;
@@ -327,6 +378,10 @@ footer {
 	padding: 0 0;
 }
 
+.post {
+	margin-bottom: 0;
+}
+
 #hidden-post {
 		background-color: black;
 		display: inline-block;
@@ -341,18 +396,24 @@ footer {
 }
 
 footer {
-	padding: 0
+	overflow: hidden;
+	margin: 0 auto;
 }
 
 .footer-text {
-	width: 100%;
-	display: inline-block;
+	width: auto;
 	font-size: 0.8em;
-	padding: 1em 10em;
+	padding-top: 0;
+	padding: 2em 9em;
 }
 
 .nav {
 	float: right;
+	padding: 1.25em 0;
+}
+
+.nav h1 {
+	display: inline-block;
 }
 
 .pic-copyright {
@@ -362,15 +423,15 @@ footer {
 }
 
 .tiy-logo {
-	margin: 0 0;
+	margin-top: 0;
 	display: inline-block;
 }
 
-.pic-copyright h1 {
+.company {
 	display: inline-block;
-	float: left;
+	vertical-align: top;
+	padding: 1.25em 1em;
 }
-
 
 }
 
